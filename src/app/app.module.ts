@@ -1,3 +1,4 @@
+import { GroceryListService } from './grocery-list/grocery-list.service';
 import { DropDownDirective } from './shared/dropdown.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,7 +29,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GroceryListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
