@@ -16,5 +16,7 @@ export class GroceryListComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onIngredientAdd(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
 }
